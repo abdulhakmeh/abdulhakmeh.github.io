@@ -18,8 +18,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    description: '©Abdul Hakmeh 2022 powerd by Hugo'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -43,13 +43,12 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Abdul Hakmeh . This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
-      share_alike: true
+      share_alike: false
       allow_commercial: false
-
 # Localization
 
 locale:
@@ -78,29 +77,29 @@ features:
     provider: ''
     disqus:
       shortname: ''
-      show_count: true
+      show_count: false
     commento:
       url: ''
   search:
-    provider: wowchemy
+    provider: Abdul Hakmeh
     algolia:
       app_id: ''
       api_key: ''
       index_name: ''
       show_logo: false
   map:
-    provider: ''
+    provider: 'mapnik'
     api_key: ''
-    zoom: 15
+    zoom: 10
 
 # Extensions
 
 extensions:
   cms:
     branch: main
-    local_backend: false
+    local_backend: true
   academicons:
-    enable: true
+    enable: false
 
 # Security
 
