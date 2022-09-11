@@ -1,3 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://abdulhakmeh.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Abdul Hakmeh'
+googleAnalytics = "G-3477WLF7XB"

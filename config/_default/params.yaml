@@ -6,9 +6,9 @@
 # Appearance
 
 appearance:
-  theme_day: minimal
-  theme_night: minimal
-  font: minimal
+  theme_day: Coffee
+  theme_night: Coffee
+  font: Rose
   font_size: L
 
 # SEO
@@ -21,7 +21,7 @@ marketing:
     description: '©Abdul Hakmeh 2022 powerd by Hugo'
     twitter: ''
   analytics:
-    google_analytics: ''
+    google_analytics: 'G-3477WLF7XB'
     baidu_tongji: ''
   verification:
     google: ''
@@ -33,19 +33,19 @@ header:
   navbar:
     enable: true
     align: l
-    show_logo: true
+    show_logo: false
     show_language: false
     show_day_night: true
-    show_search: true
+    show_search: false
     highlight_active_link: true
 
 # Site footer
 
 footer:
   copyright:
-    notice: '© {year} Abdul Hakmeh . This work is licensed under {license}'
+    notice: '© {year} Abdul Hakmeh . This work is powerd by Hugo'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: false
       allow_commercial: false
@@ -63,7 +63,7 @@ features:
     theme_light: github-light
     theme_dark: dracula
   math:
-    enable: false
+    enable: true
   privacy_pack:
     enable: false
   repository:
