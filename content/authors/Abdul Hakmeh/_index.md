@@ -19,7 +19,7 @@ bio: My research interests include Artificial Intelligence, machine learning, de
 # Interests to show in About widget
 interests:
   - Deep Learning
-  - Feterated Learning
+  - Federated Learning
   - Optimization heuristics
   - Multidimensional Time series
   - Data Mining
