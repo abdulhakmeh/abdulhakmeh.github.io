@@ -71,7 +71,7 @@ email: 'abdul.hakmeh@gmail.com'
 highlight_name: true
 ---
 
-I am a Syrian-German Software developer and system administrator in University of Hildesheim. I graduated from the Clausthal University of Technology in August 2019 with a bachelor's degree in Computer Science, majoring in Business Information Systems. Afterward, I worked as a software administrator at the University of Hildesheim. In 2022 i completed my master's degree in computer science.
+I am a Syrian-German software developer and system administrator in University of Hildesheim. I graduated from the Clausthal University of Technology in August 2019 with a bachelor's degree in Computer Science, majoring in Business Information Systems. Afterward, I worked as a software administrator at the University of Hildesheim. In 2022 i completed my master's degree in computer science.
 
 
 

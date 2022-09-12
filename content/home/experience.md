@@ -46,10 +46,9 @@ experience:
     date_end: '2019-04-29'
     description: |2-
         Responsibilities include:
-        
-        * Software development tasks in python and maltlab for the assigend projects.
+        * Develop a neural networks benchmark based on Matlab platform (regression and classification) for the quantity of fuel injection on the curves for cars.
+        * Software development tasks in python for the assigend projects.
         * Descriptive analysis tasks. 
-        * web evelopment taks in Django and MariaDB.
   - title: Help Desk Specialist
     company: New Boy Fzco
     company_url: 'https://en.wikipedia.org/wiki/NewBoy'
