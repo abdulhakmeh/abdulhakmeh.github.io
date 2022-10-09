@@ -6,8 +6,8 @@
 # Appearance
 
 appearance:
-  theme_day: Coffee
-  theme_night: Dark
+  theme_day: ocean
+  theme_night: ocean
   font: Minimal
   font_size: L
 
@@ -18,8 +18,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: '©Abdul Hakmeh 2022 powerd by Hugo'
-    twitter: ''
+    description: 'Resercher and Software Administrator'
+    twitter: 'Abdhakmeh'
   analytics:
     google_analytics: 'G-3477WLF7XB'
     baidu_tongji: ''
@@ -43,7 +43,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Abdul Hakmeh . This work is powerd by Hugo'
+    notice: '© {year} Abdul Hakmeh. This work is powerd by Hugo'
     license:
       enable: false
       allow_derivatives: false
@@ -67,7 +67,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/abdulhakmeh/'
     content_dir: content
     branch: main
   avatar:

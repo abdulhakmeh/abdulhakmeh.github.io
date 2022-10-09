@@ -14,14 +14,14 @@ organizations:
     url: https://www.uni-hildesheim.de/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Artificial Intelligence, machine learning, deep learning, federated learning, Multidimensional Time series, optimization heuristics, Discrete Optimization.
+bio: My research interests include machine learning, explainble AI, federated learning, Time series, optimization heuristics.
 
 # Interests to show in About widget
 interests:
   - Deep Learning
   - Federated Learning
   - Optimization heuristics
-  - Multidimensional Time series
+  - Explainble AI
   - Data Mining
   
 
@@ -45,7 +45,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: "mailto:abdul.hakmeh@gmail.com"
+    link: "mailto:hakmeh@ieee.org"
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/Abdhakmeh
@@ -71,7 +71,7 @@ email: 'abdul.hakmeh@gmail.com'
 highlight_name: true
 ---
 
-I am a Syrian-German software developer and system administrator in University of Hildesheim. I graduated from the Clausthal University of Technology in August 2019 with a bachelor's degree in Computer Science, majoring in Business Information Systems. Afterward, I worked as a software administrator at the University of Hildesheim. In 2022 i completed my master's degree in computer science.
+I am Abdul Hakmeh, a Syrian-German software developer and system administrator in University of Hildesheim. I graduated from the Clausthal University of Technology in August 2019 with a bachelor's degree in Computer Science, majoring in Business Information Systems. Afterward, I worked as a software administrator at the University of Hildesheim. In 2022 i completed my master's degree in computer science.
 
 
 
