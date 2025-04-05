@@ -6,8 +6,6 @@
 # Appearance
 
 appearance:
-  theme_day: ocean
-  theme_night: ocean
   font: Minimal
   font_size: L
 
@@ -18,7 +16,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'Resercher and Software Administrator'
+    description: 'PhD. Student and System Administrator'
     twitter: 'Abdhakmeh'
   analytics:
     google_analytics: 'G-3477WLF7XB'

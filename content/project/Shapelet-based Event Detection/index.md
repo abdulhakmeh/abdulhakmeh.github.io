@@ -2,7 +2,7 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "On the Impact of Data Sampling Rates on Event Detection Accuracy in Load Signatures using a Shapelet based Approach"
-summary: ""
+summary: "Shapelet for Event Detection"
 authors: [Abdul Hakmeh]
 tags: [Machine Learning]
 categories: []

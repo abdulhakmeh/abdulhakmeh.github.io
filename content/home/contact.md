@@ -9,7 +9,7 @@ headless: true
 weight: 100
 
 title: Contact
-subtitle:
+subtitle: <a class="twitter-timeline" data-width="300" data-height="300" data-theme="light" href="https://twitter.com/Abdhakmeh?ref_src=twsrc%5Etfw">Tweets by Abdhakmeh</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 content:
   # Automatically link email and phone or display as text?
@@ -35,4 +35,5 @@ content:
 
 design:
   columns: '2'
+
 ---

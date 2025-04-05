@@ -6,7 +6,7 @@ title: Abdul Hakmeh
 superuser: true
 
 # Role/position/tagline
-role: Software Developer & System administrator
+role: PhD. Student & System Administrator Univercity of Hildesheim
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -14,15 +14,16 @@ organizations:
     url: https://www.uni-hildesheim.de/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include machine learning, explainble AI, federated learning, Time series, optimization heuristics.
+bio: My research interests include operation research, reinforcement learning, federated learning, combinatorial optimization.
 
 # Interests to show in About widget
 interests:
-  - Deep Learning
-  - Federated Learning
-  - Optimization heuristics
-  - Explainble AI
-  - Data Mining
+  - Operation Research
+  - Reinforcement Learning
+  - Mathematical Modeling
+  - Combinatorial Optimization
+
+
   
 
 # Education to show in About widget
@@ -43,9 +44,12 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
+  - icon: graduation-cap
+    icon_pack: fas
+    link: "https://scholar.google.com/citations?user=53WZAOgAAAAJ&hl=en"
   - icon: envelope
     icon_pack: fas
-    link: "mailto:hakmeh@ieee.org"
+    link: "mailto:hakmeh@uni-hildesheim.de"
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/Abdhakmeh
@@ -65,13 +69,16 @@ social:
 #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'abdul.hakmeh@gmail.com'
+email: 'hakmeh@uni-hildesheim.de'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 
-I am Abdul Hakmeh, a Syrian-German software developer and system administrator in University of Hildesheim. I graduated from the Clausthal University of Technology in August 2019 with a bachelor's degree in Computer Science, majoring in Business Information Systems. Afterward, I worked as a software administrator at the University of Hildesheim. In 2022 i completed my master's degree in computer science.
+Abdul Hakmeh is a Syrian-German Ph.D. candidate and system administrator at the University of Hildesheim. He began his doctoral studies in 2023, focusing on vehicle platooning in operation research.
 
+He earned his Bachelor’s degree in Computer Science and Information Systems from Clausthal University of Technology in 2019. Shortly thereafter, he joined the University of Hildesheim as a system administrator. While working in this role, he pursued and successfully completed his Master’s degree in Computer Science in 2022.
+
+Abdul combines hands-on technical expertise with academic research, contributing to both the operational and scholarly environments of the university.
 
 
