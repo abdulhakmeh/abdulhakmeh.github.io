@@ -1,0 +1,2337 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Abdul Hakmeh" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="PhD. Student and System Administrator" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://abdulhakmeh.github.io/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#bbdefb" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b4b92e1879d1e1c27e743ea2664d2fee.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" disabled>
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" >
+  
+
+  
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3477WLF7XB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-3477WLF7XB', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  
+
+  
+  
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Abdul Hakmeh" />
+  
+
+  
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://abdulhakmeh.github.io/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@Abdhakmeh" />
+    <meta property="twitter:creator" content="@Abdhakmeh" />
+  
+  <meta property="og:site_name" content="Abdul Hakmeh" />
+  <meta property="og:url" content="https://abdulhakmeh.github.io/" />
+  <meta property="og:title" content="Abdul Hakmeh" />
+  <meta property="og:description" content="PhD. Student and System Administrator" /><meta property="og:image" content="https://abdulhakmeh.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://abdulhakmeh.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00" />
+    
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://abdulhakmeh.github.io/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://abdulhakmeh.github.io/"
+}
+</script>
+
+
+  
+
+  
+
+
+  <title>Abdul Hakmeh</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper  dark "  >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.22ad66a4f96b4e9da14bbb023ea57684.js"></script>
+
+  
+
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about" data-target="#about"><span>Abdul Hakmeh</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publication" data-target="#publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#event" data-target="#event"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="about" class="home-section wg-about  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+
+      
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+      
+      <img class="avatar avatar-circle"
+           width="270" height="270"
+           src="/authors/abdul-hakmeh/avatar_hu714349f661826f33488893c2d86e9fbb_116302_270x270_fill_q75_lanczos_center.jpg" alt="Abdul Hakmeh">
+      
+
+      <div class="portrait-title">
+
+        <h2>Abdul Hakmeh</h2>
+
+        <h3>PhD. Student &amp; System Administrator Univercity of Hildesheim</h3>
+
+        
+        <h3>
+          <a href="https://www.uni-hildesheim.de/" target="_blank" rel="noopener">
+          <span>University of Hildesheim</span>
+          </a>
+        </h3>
+        
+      </div>
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://scholar.google.com/citations?user=53WZAOgAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="graduation-cap">
+            <i class="fas fa-graduation-cap big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+        <li>
+          <a href="mailto:hakmeh@uni-hildesheim.de"  aria-label="envelope">
+            <i class="fas fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://twitter.com/Abdhakmeh" target="_blank" rel="noopener" aria-label="twitter">
+            <i class="fab fa-twitter big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://github.com/abdulhakmeh" target="_blank" rel="noopener" aria-label="github">
+            <i class="fab fa-github big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://www.linkedin.com/in/abdhakmeh/" target="_blank" rel="noopener" aria-label="linkedin">
+            <i class="fab fa-linkedin big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+    <h1>Biography</h1>
+
+    <div class="article-style">
+      <p>Abdul Hakmeh is a Syrian-German Ph.D. candidate and system administrator at the University of Hildesheim. He began his doctoral studies in 2023, focusing on vehicle platooning in operation research.</p>
+<p>He earned his Bachelor’s degree in Computer Science and Information Systems from Clausthal University of Technology in 2019. Shortly thereafter, he joined the University of Hildesheim as a system administrator. While working in this role, he pursued and successfully completed his Master’s degree in Computer Science in 2022.</p>
+<p>Abdul combines hands-on technical expertise with academic research, contributing to both the operational and scholarly environments of the university.</p>
+
+    </div>
+
+    <div class="row">
+
+      
+      <div class="col-md-5">
+        <div class="section-subheading">Interests</div>
+        <ul class="ul-interests mb-0">
+          
+          <li>Operation Research</li>
+          
+          <li>Reinforcement Learning</li>
+          
+          <li>Mathematical Modeling</li>
+          
+          <li>Combinatorial Optimization</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-md-7">
+        <div class="section-subheading">Education</div>
+        <ul class="ul-edu fa-ul mb-0">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">MSc. in Computer Science, 2022</p>
+              <p class="institution">The Clausthal University of Technology</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">BSc. in Bussniss Information Systems, 2019</p>
+              <p class="institution">The Clausthal University of Technology</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">AE. in Computer Technologies, 2010</p>
+              <p class="institution">Computer Technology Institut of Damascus</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="experience" class="home-section wg-experience  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Experience</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+  
+
+  
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col ">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border exp-fill">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex align-content-start">
+            <div class="mr-2 mb-2"><a href="https://www.uni-hildesheim.de/" target="_blank" rel="noopener"><img src="/media/icons/brands/HildesheimUni.svg" width="56px" height="56px" alt="University of Hildesheim" loading="lazy"></a></div>
+            <div>
+          
+
+              <div class="section-subheading card-title exp-title text-muted my-0">System Administrator</div>
+              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.uni-hildesheim.de/" target="_blank" rel="noopener">University of Hildesheim</a></div>
+              <div class="text-muted exp-meta">
+                Oct 2019 –
+                
+                  Present
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>Hildesheim, Germany</span>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card-text"><p>Responsibilities include:</p>
+<ul>
+<li>
+<p>Performing server administration tasks (Linux/ Windows servers in a virtual environment ESXI/Docker), including user/group administration, security permissions.</p>
+</li>
+<li>
+<p>Setting and Monitoring the datacenter of the economic institute.</p>
+</li>
+<li>
+<p>Creating, maintaining, and hosting software and web portals for institute projects.</p>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border ">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex align-content-start">
+            <div class="mr-2 mb-2"><a href="https://www.isse.tu-clausthal.de/" target="_blank" rel="noopener"><img src="/media/icons/brands/TUC.svg" width="56px" height="56px" alt="Institute for Software and Systems Engineering" loading="lazy"></a></div>
+            <div>
+          
+
+              <div class="section-subheading card-title exp-title text-muted my-0">Student Assistant (HiWi)</div>
+              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.isse.tu-clausthal.de/" target="_blank" rel="noopener">Institute for Software and Systems Engineering</a></div>
+              <div class="text-muted exp-meta">
+                Mar 2016 –
+                
+                  Apr 2019
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>Claushtal University, Germany</span>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card-text"><p>Responsibilities include:</p>
+<ul>
+<li>Develop a neural networks benchmark based on Matlab platform (regression and classification) for the quantity of fuel injection on the curves for cars.</li>
+<li>Software development tasks in python for the assigend projects.</li>
+<li>Descriptive analysis tasks.</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row experience">
+    
+    <div class="col-auto text-center flex-column d-none d-sm-flex">
+      <div class="row h-50">
+        <div class="col border-right">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+      <div class="m-2">
+        <span class="badge badge-pill border ">&nbsp;</span>
+      </div>
+      <div class="row h-50">
+        <div class="col ">&nbsp;</div>
+        <div class="col">&nbsp;</div>
+      </div>
+    </div>
+    
+    <div class="col py-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex align-content-start">
+            <div class="mr-2 mb-2"><a href="https://en.wikipedia.org/wiki/NewBoy" target="_blank" rel="noopener"><img src="/media/icons/brands/newBoy.svg" width="56px" height="56px" alt="New Boy Fzco" loading="lazy"></a></div>
+            <div>
+          
+
+              <div class="section-subheading card-title exp-title text-muted my-0">Help Desk Specialist</div>
+              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://en.wikipedia.org/wiki/NewBoy" target="_blank" rel="noopener">New Boy Fzco</a></div>
+              <div class="text-muted exp-meta">
+                Jan 2011 –
+                
+                  Aug 2013
+                
+                
+                  <span class="middot-divider"></span>
+                  <span>Dubai, EA</span>
+                
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="card-text"><p>Responsibilities include:</p>
+<ul>
+<li>1st and 2nd level IT-Support for 150 employees (status 2013)</li>
+<li>Machine operator &amp; maintenance</li>
+<li>VMware Site Recovery Manager</li>
+<li>VPN Specialist (SSTP, L2TP)</li>
+<li>New employee IT-orientation</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="projects" class="home-section wg-portfolio  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Projects</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  
+
+  
+
+    
+
+    
+    
+    
+    
+      
+    
+
+    <span class="d-none default-project-filter">*</span>
+
+    
+    
+    <div class="project-toolbar">
+      <div class="project-filters">
+        <div class="btn-toolbar ">
+          <div class="btn-group flex-wrap">
+            
+              
+              
+              
+                
+              
+              <a href="#" data-filter="*" class="btn btn-primary btn-lg active">All</a>
+            
+              
+              
+              
+              <a href="#" data-filter=".js-id-Deep-Learning" class="btn btn-primary btn-lg">Deep Learning</a>
+            
+              
+              
+              
+              <a href="#" data-filter=".js-id-Demo" class="btn btn-primary btn-lg">Other</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+
+  <div class="isotope projects-container row js-layout-row ">
+
+    
+    
+
+    
+    
+      
+      
+    
+    
+    
+    
+    
+      
+    
+
+    
+    
+    
+    
+    
+
+    
+      
+        
+          <div class="col-12 isotope-item js-id-Machine-Learning">
+        
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/outlier_detection/" >Anomalies Intervals Detection</a>
+    </div>
+
+    
+    <a href="/project/outlier_detection/"  class="summary-link">
+      <div class="article-style">
+        PhD. Assignment - Detecting Collective Anomalies in Weather Time series
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Abdul Hakmeh</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://raw.githubusercontent.com/abdulhakmeh/KL_divergence_PhD_Assigment/main/Report.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/abdulhakmeh/KL_divergence_PhD_Assigment" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/project/outlier_detection/" >
+      <img src="/project/outlier_detection/featured_hudea1e7f0a5f6150cb732a527140b44a6_165833_150x0_resize_q75_h2_lanczos.webp" height="74" width="150"
+           alt="Anomalies Intervals Detection" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+      </div>
+    
+      
+        
+          <div class="col-12 isotope-item js-id-Deep-Learning">
+        
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/non-linear-windowing/" >Investigating the effects of non-uniform input data windowing on electrical load disaggregation performance</a>
+    </div>
+
+    
+    <a href="/project/non-linear-windowing/"  class="summary-link">
+      <div class="article-style">
+        Non Linear Windowing for NILM
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Abdul Hakmeh</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/abdulhakmeh/Non-linear-Windowing-for-NILM/blob/main/Report.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/project/non-linear-windowing/" >
+      <img src="/project/non-linear-windowing/featured_hu41f93f3a2f568b9a6e464859ec8aa573_59214_150x0_resize_q75_h2_lanczos.webp" height="80" width="150"
+           alt="Investigating the effects of non-uniform input data windowing on electrical load disaggregation performance" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+      </div>
+    
+      
+        
+          <div class="col-12 isotope-item js-id-Metaheuristics">
+        
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/simulated-annealing-for-platooning/" >Optimization fuel-consuming in platooning of vehicles by using sophisticated meta-heuristics</a>
+    </div>
+
+    
+    <a href="/project/simulated-annealing-for-platooning/"  class="summary-link">
+      <div class="article-style">
+        Simulated Annealing for Platooning
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Abdul Hakmeh</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/abdulhakmeh/Simulated-Annaling-for-platooning-problem.git" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/project/simulated-annealing-for-platooning/" >
+      <img src="/project/simulated-annealing-for-platooning/featured_hu41f93f3a2f568b9a6e464859ec8aa573_57734_150x0_resize_q75_h2_lanczos.webp" height="144" width="150"
+           alt="Optimization fuel-consuming in platooning of vehicles by using sophisticated meta-heuristics" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+      </div>
+    
+      
+        
+          <div class="col-12 isotope-item js-id-Machine-Learning">
+        
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item view-compact">
+  <div class="media-body">
+
+    <div class="section-subheading article-title mb-0 mt-0">
+      <a href="/project/shapelet-based-event-detection/" >On the Impact of Data Sampling Rates on Event Detection Accuracy in Load Signatures using a Shapelet based Approach</a>
+    </div>
+
+    
+    <a href="/project/shapelet-based-event-detection/"  class="summary-link">
+      <div class="article-style">
+        Shapelet for Event Detection
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+      <div>
+        
+
+  <span >
+      Abdul Hakmeh</span>
+      </div>
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/abdulhakmeh/shapelet-based-event-detection" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/abdulhakmeh/shapelet-based-event-detection/blob/main/Slides.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/project/shapelet-based-event-detection/" >
+      <img src="/project/shapelet-based-event-detection/featured_hufa36c3d60f13a64a1945bc6a235f1ef5_55911_150x0_resize_q75_h2_lanczos.webp" height="96" width="150"
+           alt="On the Impact of Data Sampling Rates on Event Detection Accuracy in Load Signatures using a Shapelet based Approach" loading="lazy">
+    </a>
+    
+  </div>
+</div>
+
+      </div>
+    
+
+  </div>
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="publications" class="home-section wg-pages  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Recent Publications</h1>
+            
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<div class="col-12 col-lg-8">
+
+  <div class="alert alert-note">
+  <div>
+    Quickly discover relevant content by <a href="./publication/">filtering publications</a>.
+  </div>
+</div>
+
+
+  
+
+  
+  
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+  <section id="contact" class="home-section wg-contact  "  >
+   <div class="home-section-bg " >
+     
+   </div>
+    <div class="container">
+
+    
+      <div class="row  ">
+      
+        
+          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Contact</h1>
+            <p class="mt-1"><a class="twitter-timeline" data-width="300" data-height="300" data-theme="light" href="https://twitter.com/Abdhakmeh?ref_src=twsrc%5Etfw">Tweets by Abdhakmeh</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+          </div>
+        
+      
+    
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-12 col-lg-8">
+  
+
+  
+
+    
+    
+      
+      
+      
+    
+
+    <div class="mb-3">
+      <form name="contact" method="POST" action="https://formspree.io/f/moqblvaz"   >
+        <div class="form-group form-inline">
+          <label class="sr-only" for="inputName">Name</label>
+          <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
+        </div>
+        <div class="form-group form-inline">
+          <label class="sr-only" for="inputEmail">Email</label>
+          <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="inputMessage">Message</label>
+          <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" required></textarea>
+        </div>
+        
+        <div class="d-none">
+          <label>Do not fill this field unless you are a bot: <input name="_gotcha"></label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary px-3 py-2 w-100">Send</button>
+      </form>
+    </div>
+  
+
+  <ul class="fa-ul">
+
+    
+
+    
+
+    
+    
+      
+      <li>
+        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span id="person-address">Samelsonplatz 1, Hildesheim, 31141</span>
+      </li>
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+  </ul>
+
+  
+  <div class="d-none">
+    <input id="map-provider" value="mapnik">
+    <input id="map-lat" value="52.134309111665985">
+    <input id="map-lng" value="9.967693164540405">
+    <input id="map-dir" value="Samelsonplatz 1, Hildesheim, 31141">
+    <input id="map-zoom" value="10">
+    <input id="map-api-key" value="">
+  </div>
+  <div id="map"></div>
+  
+
+</div>
+
+
+    
+      </div>
+    
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Abdul Hakmeh. This work is powerd by Hugo
+  </p>
+  
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+    <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/en/js/wowchemy.min.5f2242f9e416ca8987b1818a173b5651.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

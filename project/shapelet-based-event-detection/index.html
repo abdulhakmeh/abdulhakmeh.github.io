@@ -1,0 +1,1172 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.6.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Abdul Hakmeh" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Shapelet for Event Detection" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://abdulhakmeh.github.io/project/shapelet-based-event-detection/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#bbdefb" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.b4b92e1879d1e1c27e743ea2664d2fee.css" />
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" disabled>
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" >
+  
+
+  
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3477WLF7XB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-3477WLF7XB', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://abdulhakmeh.github.io/project/shapelet-based-event-detection/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+    <meta property="twitter:site" content="@Abdhakmeh" />
+    <meta property="twitter:creator" content="@Abdhakmeh" />
+  
+  <meta property="og:site_name" content="Abdul Hakmeh" />
+  <meta property="og:url" content="https://abdulhakmeh.github.io/project/shapelet-based-event-detection/" />
+  <meta property="og:title" content="On the Impact of Data Sampling Rates on Event Detection Accuracy in Load Signatures using a Shapelet based Approach | Abdul Hakmeh" />
+  <meta property="og:description" content="Shapelet for Event Detection" /><meta property="og:image" content="https://abdulhakmeh.github.io/project/shapelet-based-event-detection/featured.jpg" />
+    <meta property="twitter:image" content="https://abdulhakmeh.github.io/project/shapelet-based-event-detection/featured.jpg" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2019-08-08T13:39:15&#43;02:00"
+      />
+    
+    <meta property="article:modified_time" content="2019-08-08T13:39:15&#43;02:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://abdulhakmeh.github.io/project/shapelet-based-event-detection/"
+  },
+  "headline": "On the Impact of Data Sampling Rates on Event Detection Accuracy in Load Signatures using a Shapelet based Approach",
+  
+  "image": [
+    "https://abdulhakmeh.github.io/project/shapelet-based-event-detection/featured.jpg"
+  ],
+  
+  "datePublished": "2019-08-08T13:39:15+02:00",
+  "dateModified": "2019-08-08T13:39:15+02:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Abdul Hakmeh"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Abdul Hakmeh",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://abdulhakmeh.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Shapelet for Event Detection"
+}
+</script>
+
+  
+
+  
+
+  
+
+
+  <title>On the Impact of Data Sampling Rates on Event Detection Accuracy in Load Signatures using a Shapelet based Approach | Abdul Hakmeh</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  dark " data-wc-page-id="748dca3c7c7f54b93ee7315a746eeb93" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.22ad66a4f96b4e9da14bbb023ea57684.js"></script>
+
+  
+
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Abdul Hakmeh</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#event"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>On the Impact of Data Sampling Rates on Event Detection Accuracy in Load Signatures using a Shapelet based Approach</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      Abdul Hakmeh</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Aug 8, 2019
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/abdulhakmeh/shapelet-based-event-detection" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/abdulhakmeh/shapelet-based-event-detection/blob/main/Slides.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 459px;">
+  <div style="position: relative">
+    <img src="/project/shapelet-based-event-detection/featured_hufa36c3d60f13a64a1945bc6a235f1ef5_55911_720x2500_fit_q75_h2_lanczos.webp" width="720" height="459" alt="" class="featured-image">
+    <span class="article-header-caption">final results on  phase B of BLUED</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="abstract">Abstract</h2>
+<p>Non-intrusive load monitoring (NILM) is one of the practical applications of the smart electricity grid. NILM provides a comprehensive road-map to detect and determine operation circumstances of an individual appliance from an aggregate load. It can also provide the energy management system with information about appliance-level power consumption, analytical statistics, and detection of energy-hungry appliances to ensure the efficient use of the resources. The event detection is one of the NILM phases that is responsible for detecting state-changes of the appliances.</p>
+<p>In this project, a study is made to measure the impact of data sampling rate on the detection accuracy obtained through an event detection algorithm. Therefore, a machine learning based shapelet approach for electrical appliance use detection is implemented. The fast shapelet approach detects the occurrence of an event that is caused by switching on/off of an electrical appliance. A general architecture is introduced to evaluate the performance through feeding the algorithm with re-sampled data and comparing the obtained accuracy with the sampling rate. Different metrics are used to ensure a comprehensive evaluation; F1-score, confusion matrix, and classification accuracy.</p>
+<h2 id="data-set">Data set</h2>
+<p>To evaluate our algorithm the BLUED dataset is used. The BLUED includes one week of the current and the voltage measurements for a family house in Pennsylvania, Pittsburgh. The data collection were taken in October 2011 from nearly 50 electrical devices in the house. The dataset presents the changes in the operating status of each appliance (turn  on/off). The measurements were taken by using two separate systems; one is at the main distribution panel to capture the current and voltage, and the other system is used to register the time stamps for each event. The reason behind choosing the BLUED is that this dataset in its original form provides raw data of the current and the voltage.</p>
+<h2 id="results">Results</h2>
+<p>The results of the experiment have shown that it is possible to detect appliances events with downsampled data using a shapelet based approach. Furthermore, it would have been as well possible that the downsampling improves the accuracy, but the evaluation of the event detection on noisy downsampled data have statistically verified that the lowering of the sampling rate is directly proportional to the accuracy of the detection in a linear form.</p>
+
+    </div>
+
+    
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/machine-learning/">Machine Learning</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://abdulhakmeh.github.io/project/shapelet-based-event-detection/&amp;text=On%20the%20Impact%20of%20Data%20Sampling%20Rates%20on%20Event%20Detection%20Accuracy%20in%20Load%20Signatures%20using%20a%20Shapelet%20based%20Approach" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://abdulhakmeh.github.io/project/shapelet-based-event-detection/&amp;t=On%20the%20Impact%20of%20Data%20Sampling%20Rates%20on%20Event%20Detection%20Accuracy%20in%20Load%20Signatures%20using%20a%20Shapelet%20based%20Approach" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=On%20the%20Impact%20of%20Data%20Sampling%20Rates%20on%20Event%20Detection%20Accuracy%20in%20Load%20Signatures%20using%20a%20Shapelet%20based%20Approach&amp;body=https://abdulhakmeh.github.io/project/shapelet-based-event-detection/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://abdulhakmeh.github.io/project/shapelet-based-event-detection/&amp;title=On%20the%20Impact%20of%20Data%20Sampling%20Rates%20on%20Event%20Detection%20Accuracy%20in%20Load%20Signatures%20using%20a%20Shapelet%20based%20Approach" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=On%20the%20Impact%20of%20Data%20Sampling%20Rates%20on%20Event%20Detection%20Accuracy%20in%20Load%20Signatures%20using%20a%20Shapelet%20based%20Approach%20https://abdulhakmeh.github.io/project/shapelet-based-event-detection/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://abdulhakmeh.github.io/project/shapelet-based-event-detection/&amp;title=On%20the%20Impact%20of%20Data%20Sampling%20Rates%20on%20Event%20Detection%20Accuracy%20in%20Load%20Signatures%20using%20a%20Shapelet%20based%20Approach" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2025 Abdul Hakmeh. This work is powerd by Hugo
+  </p>
+  
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+
+  <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+<script src="/en/js/wowchemy.min.5f2242f9e416ca8987b1818a173b5651.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
